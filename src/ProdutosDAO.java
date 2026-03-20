@@ -14,7 +14,11 @@ public class ProdutosDAO {
         
         String sql = "INSERT INTO produtos (nome, valor, status) VALUES (?, ?, ?)";
 
+<<<<<<< HEAD
         conn = new conectaDAO().conectaBD();
+=======
+        conn = new ConexaoDAO().conectaBD();
+>>>>>>> c6240d5850710d2b61513911d6e79b2dfb34e132
 
         try {
             prep = conn.prepareStatement(sql);
@@ -61,6 +65,7 @@ public class ProdutosDAO {
 
         return lista;
     }
+<<<<<<< HEAD
     public void venderProduto(int id) {
     Connection conn = null;
     PreparedStatement pstm = null;
@@ -119,4 +124,6 @@ obj.setValor(rs.getInt("valor"));
 
     return lista;
 }
+=======
+>>>>>>> c6240d5850710d2b61513911d6e79b2dfb34e132
 }
